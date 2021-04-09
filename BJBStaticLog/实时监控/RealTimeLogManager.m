@@ -125,7 +125,7 @@ static BOOL windowOpen = NO;
         //用[NSDate date]可以获取系统当前时间
         NSString *currentDateStr = [dateFormatter stringFromDate:[NSDate date]];
         
-        NSString *msg = [NSString stringWithFormat:@"%@:[%@ ]%@", currentDateStr, module, parmaStr];
+        NSString *msg = [NSString stringWithFormat:@"%@:[%@]:%@", currentDateStr, module, parmaStr];
         
         logLabel.text = msg;
         
