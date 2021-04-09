@@ -6,6 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RealTimeLogManager.h"
+#import "LogManager.h"
 
 @interface BJBStaticLog : NSObject
 

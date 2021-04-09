@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		0FFC3FF1262039D900813B95 /* BJBStaticLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC3FF0262039D900813B95 /* BJBStaticLog.m */; };
 		0FFC3FF2262039D900813B95 /* BJBStaticLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0FFC3FEF262039D900813B95 /* BJBStaticLog.h */; };
+		0FFC401126203AC800813B95 /* RealTimeLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC3FFE26203AC800813B95 /* RealTimeLogManager.m */; };
+		0FFC401226203AC800813B95 /* RealTimeLogWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC3FFF26203AC800813B95 /* RealTimeLogWindow.m */; };
+		0FFC401326203AC800813B95 /* LogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC400326203AC800813B95 /* LogManager.m */; };
+		0FFC401426203AC800813B95 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC400526203AC800813B95 /* unzip.c */; };
+		0FFC401526203AC800813B95 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC400626203AC800813B95 /* zip.c */; };
+		0FFC401626203AC800813B95 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC400826203AC800813B95 /* ioapi.c */; };
+		0FFC401726203AC800813B95 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC400926203AC800813B95 /* mztools.c */; };
+		0FFC401826203AC800813B95 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC400D26203AC800813B95 /* ZipArchive.mm */; };
+		0FFC401C26203B5800813B95 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFC401B26203B5800813B95 /* libz.tbd */; };
+		0FFC401F26203B5D00813B95 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFC401E26203B5D00813B95 /* CoreGraphics.framework */; };
+		0FFC402126203B7800813B95 /* RealTimeLogManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0FFC400026203AC800813B95 /* RealTimeLogManager.h */; };
+		0FFC402226203B7800813B95 /* LogManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0FFC401026203AC800813B95 /* LogManager.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,6 +30,8 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				0FFC402126203B7800813B95 /* RealTimeLogManager.h in CopyFiles */,
+				0FFC402226203B7800813B95 /* LogManager.h in CopyFiles */,
 				0FFC3FF2262039D900813B95 /* BJBStaticLog.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -28,6 +42,25 @@
 		0FFC3FEC262039D900813B95 /* libBJBStaticLog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBJBStaticLog.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFC3FEF262039D900813B95 /* BJBStaticLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJBStaticLog.h; sourceTree = "<group>"; };
 		0FFC3FF0262039D900813B95 /* BJBStaticLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJBStaticLog.m; sourceTree = "<group>"; };
+		0FFC3FFE26203AC800813B95 /* RealTimeLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealTimeLogManager.m; sourceTree = "<group>"; };
+		0FFC3FFF26203AC800813B95 /* RealTimeLogWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealTimeLogWindow.m; sourceTree = "<group>"; };
+		0FFC400026203AC800813B95 /* RealTimeLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealTimeLogManager.h; sourceTree = "<group>"; };
+		0FFC400126203AC800813B95 /* RealTimeLogWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealTimeLogWindow.h; sourceTree = "<group>"; };
+		0FFC400326203AC800813B95 /* LogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogManager.m; sourceTree = "<group>"; };
+		0FFC400526203AC800813B95 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		0FFC400626203AC800813B95 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		0FFC400726203AC800813B95 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		0FFC400826203AC800813B95 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		0FFC400926203AC800813B95 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		0FFC400A26203AC800813B95 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		0FFC400B26203AC800813B95 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		0FFC400C26203AC800813B95 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		0FFC400D26203AC800813B95 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
+		0FFC400E26203AC800813B95 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		0FFC400F26203AC800813B95 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		0FFC401026203AC800813B95 /* LogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogManager.h; sourceTree = "<group>"; };
+		0FFC401B26203B5800813B95 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		0FFC401E26203B5D00813B95 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FFC401F26203B5D00813B95 /* CoreGraphics.framework in Frameworks */,
+				0FFC401C26203B5800813B95 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +81,7 @@
 			children = (
 				0FFC3FEE262039D900813B95 /* BJBStaticLog */,
 				0FFC3FED262039D900813B95 /* Products */,
+				0FFC401A26203B5800813B95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,8 +98,58 @@
 			children = (
 				0FFC3FEF262039D900813B95 /* BJBStaticLog.h */,
 				0FFC3FF0262039D900813B95 /* BJBStaticLog.m */,
+				0FFC3FFD26203AC800813B95 /* 实时监控 */,
+				0FFC400226203AC800813B95 /* Log */,
 			);
 			path = BJBStaticLog;
+			sourceTree = "<group>";
+		};
+		0FFC3FFD26203AC800813B95 /* 实时监控 */ = {
+			isa = PBXGroup;
+			children = (
+				0FFC400026203AC800813B95 /* RealTimeLogManager.h */,
+				0FFC3FFE26203AC800813B95 /* RealTimeLogManager.m */,
+				0FFC400126203AC800813B95 /* RealTimeLogWindow.h */,
+				0FFC3FFF26203AC800813B95 /* RealTimeLogWindow.m */,
+			);
+			path = "实时监控";
+			sourceTree = "<group>";
+		};
+		0FFC400226203AC800813B95 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				0FFC401026203AC800813B95 /* LogManager.h */,
+				0FFC400326203AC800813B95 /* LogManager.m */,
+				0FFC400426203AC800813B95 /* minizip */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		0FFC400426203AC800813B95 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				0FFC400526203AC800813B95 /* unzip.c */,
+				0FFC400626203AC800813B95 /* zip.c */,
+				0FFC400726203AC800813B95 /* ZipArchive.h */,
+				0FFC400826203AC800813B95 /* ioapi.c */,
+				0FFC400926203AC800813B95 /* mztools.c */,
+				0FFC400A26203AC800813B95 /* crypt.h */,
+				0FFC400B26203AC800813B95 /* zip.h */,
+				0FFC400C26203AC800813B95 /* unzip.h */,
+				0FFC400D26203AC800813B95 /* ZipArchive.mm */,
+				0FFC400E26203AC800813B95 /* mztools.h */,
+				0FFC400F26203AC800813B95 /* ioapi.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		0FFC401A26203B5800813B95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FFC401E26203B5D00813B95 /* CoreGraphics.framework */,
+				0FFC401B26203B5800813B95 /* libz.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +208,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FFC401326203AC800813B95 /* LogManager.m in Sources */,
+				0FFC401426203AC800813B95 /* unzip.c in Sources */,
+				0FFC401726203AC800813B95 /* mztools.c in Sources */,
 				0FFC3FF1262039D900813B95 /* BJBStaticLog.m in Sources */,
+				0FFC401526203AC800813B95 /* zip.c in Sources */,
+				0FFC401126203AC800813B95 /* RealTimeLogManager.m in Sources */,
+				0FFC401226203AC800813B95 /* RealTimeLogWindow.m in Sources */,
+				0FFC401826203AC800813B95 /* ZipArchive.mm in Sources */,
+				0FFC401626203AC800813B95 /* ioapi.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +340,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9X7987VHQ;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -258,6 +353,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9X7987VHQ;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
