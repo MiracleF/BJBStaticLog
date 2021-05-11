@@ -8,12 +8,13 @@
 #import "RealTimeLogManager.h"
 #import "RealTimeLogWindow.h"
 #import "LogManager.h"
+#import "HideStatusBarViewController.h"
 
 static BOOL windowOpen = NO;
 
 @interface RealTimeLogManager () <UITableViewDelegate, UITableViewDataSource>
 
-@property (strong, nonatomic) UIViewController *miniVC;
+@property (strong, nonatomic) HideStatusBarViewController *miniVC;
 @property (strong, nonatomic) RealTimeLogWindow *miniWindow;
 @property (strong, nonatomic) NSMutableArray *cellLogs;
 
@@ -44,7 +45,7 @@ static BOOL windowOpen = NO;
 - (void)createMiniWindowBeforeAllView
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        self.miniVC = [[UIViewController alloc] init];
+        self.miniVC = [[HideStatusBarViewController alloc] init];
         self.miniVC.view.backgroundColor = [UIColor whiteColor];
         
         UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height - 20) style:UITableViewStylePlain];
@@ -62,7 +63,7 @@ static BOOL windowOpen = NO;
         
         self.miniWindow = [[RealTimeLogWindow alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 20)];
         //    self.miniWindow = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
-        [self.miniWindow setWindowLevel:UIWindowLevelStatusBar + 10];
+        [self.miniWindow setWindowLevel:UIWindowLevelStatusBar + 1000];
         [self.miniWindow setBackgroundColor:[UIColor clearColor]];
         [self.miniWindow setRootViewController:self.miniVC];
         self.miniWindow.hidden = NO;

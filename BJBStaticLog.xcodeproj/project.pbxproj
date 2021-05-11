@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F4A73D2264A7F9C0064F026 /* HideStatusBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A73D1264A7F9C0064F026 /* HideStatusBarViewController.m */; };
 		0FFC3FF1262039D900813B95 /* BJBStaticLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC3FF0262039D900813B95 /* BJBStaticLog.m */; };
 		0FFC3FF2262039D900813B95 /* BJBStaticLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0FFC3FEF262039D900813B95 /* BJBStaticLog.h */; };
 		0FFC401126203AC800813B95 /* RealTimeLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC3FFE26203AC800813B95 /* RealTimeLogManager.m */; };
@@ -39,6 +40,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F4A73D0264A7F9C0064F026 /* HideStatusBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HideStatusBarViewController.h; sourceTree = "<group>"; };
+		0F4A73D1264A7F9C0064F026 /* HideStatusBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HideStatusBarViewController.m; sourceTree = "<group>"; };
 		0FFC3FEC262039D900813B95 /* libBJBStaticLog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBJBStaticLog.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFC3FEF262039D900813B95 /* BJBStaticLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJBStaticLog.h; sourceTree = "<group>"; };
 		0FFC3FF0262039D900813B95 /* BJBStaticLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJBStaticLog.m; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 			children = (
 				0FFC400026203AC800813B95 /* RealTimeLogManager.h */,
 				0FFC3FFE26203AC800813B95 /* RealTimeLogManager.m */,
+				0F4A73D0264A7F9C0064F026 /* HideStatusBarViewController.h */,
+				0F4A73D1264A7F9C0064F026 /* HideStatusBarViewController.m */,
 				0FFC400126203AC800813B95 /* RealTimeLogWindow.h */,
 				0FFC3FFF26203AC800813B95 /* RealTimeLogWindow.m */,
 			);
@@ -208,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4A73D2264A7F9C0064F026 /* HideStatusBarViewController.m in Sources */,
 				0FFC401326203AC800813B95 /* LogManager.m in Sources */,
 				0FFC401426203AC800813B95 /* unzip.c in Sources */,
 				0FFC401726203AC800813B95 /* mztools.c in Sources */,
