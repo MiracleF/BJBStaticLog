@@ -13,15 +13,13 @@
 		0FFC401126203AC800813B95 /* RealTimeLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC3FFE26203AC800813B95 /* RealTimeLogManager.m */; };
 		0FFC401226203AC800813B95 /* RealTimeLogWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC3FFF26203AC800813B95 /* RealTimeLogWindow.m */; };
 		0FFC401326203AC800813B95 /* LogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC400326203AC800813B95 /* LogManager.m */; };
-		0FFC401426203AC800813B95 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC400526203AC800813B95 /* unzip.c */; };
-		0FFC401526203AC800813B95 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC400626203AC800813B95 /* zip.c */; };
-		0FFC401626203AC800813B95 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC400826203AC800813B95 /* ioapi.c */; };
-		0FFC401726203AC800813B95 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC400926203AC800813B95 /* mztools.c */; };
-		0FFC401826203AC800813B95 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC400D26203AC800813B95 /* ZipArchive.mm */; };
-		0FFC401C26203B5800813B95 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFC401B26203B5800813B95 /* libz.tbd */; };
-		0FFC401F26203B5D00813B95 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FFC401E26203B5D00813B95 /* CoreGraphics.framework */; };
 		0FFC402126203B7800813B95 /* RealTimeLogManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0FFC400026203AC800813B95 /* RealTimeLogManager.h */; };
 		0FFC402226203B7800813B95 /* LogManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0FFC401026203AC800813B95 /* LogManager.h */; };
+		69B149A827181FD300CFFE1B /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B149A727181FD300CFFE1B /* SSZipArchive.m */; };
+		69B149C927181FFD00CFFE1B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B149C827181FFD00CFFE1B /* Security.framework */; };
+		69B149CB2718200200CFFE1B /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B149CA2718200200CFFE1B /* libiconv.tbd */; };
+		69B14A022718231200CFFE1B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B14A012718231200CFFE1B /* libz.tbd */; };
+		69B14A042718231E00CFFE1B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B14A032718231E00CFFE1B /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,20 +48,43 @@
 		0FFC400026203AC800813B95 /* RealTimeLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealTimeLogManager.h; sourceTree = "<group>"; };
 		0FFC400126203AC800813B95 /* RealTimeLogWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealTimeLogWindow.h; sourceTree = "<group>"; };
 		0FFC400326203AC800813B95 /* LogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogManager.m; sourceTree = "<group>"; };
-		0FFC400526203AC800813B95 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
-		0FFC400626203AC800813B95 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
-		0FFC400726203AC800813B95 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
-		0FFC400826203AC800813B95 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
-		0FFC400926203AC800813B95 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
-		0FFC400A26203AC800813B95 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
-		0FFC400B26203AC800813B95 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
-		0FFC400C26203AC800813B95 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
-		0FFC400D26203AC800813B95 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
-		0FFC400E26203AC800813B95 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
-		0FFC400F26203AC800813B95 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
 		0FFC401026203AC800813B95 /* LogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogManager.h; sourceTree = "<group>"; };
-		0FFC401B26203B5800813B95 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
-		0FFC401E26203B5D00813B95 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		69B149A527181FD300CFFE1B /* SSZipCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipCommon.h; sourceTree = "<group>"; };
+		69B149A627181FD300CFFE1B /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		69B149A727181FD300CFFE1B /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		69B149AA27181FDA00CFFE1B /* mz_strm_os_posix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_strm_os_posix.c; sourceTree = "<group>"; };
+		69B149AB27181FDA00CFFE1B /* mz_strm_pkcrypt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_strm_pkcrypt.c; sourceTree = "<group>"; };
+		69B149AC27181FDA00CFFE1B /* mz_strm_wzaes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mz_strm_wzaes.h; sourceTree = "<group>"; };
+		69B149AD27181FDA00CFFE1B /* mz_compat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mz_compat.h; sourceTree = "<group>"; };
+		69B149AE27181FDA00CFFE1B /* mz_strm_zlib.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_strm_zlib.c; sourceTree = "<group>"; };
+		69B149AF27181FDA00CFFE1B /* mz_zip.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_zip.c; sourceTree = "<group>"; };
+		69B149B027181FDA00CFFE1B /* mz_os.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mz_os.h; sourceTree = "<group>"; };
+		69B149B227181FDA00CFFE1B /* mz_zip_rw.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_zip_rw.c; sourceTree = "<group>"; };
+		69B149B327181FDA00CFFE1B /* mz_strm_split.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mz_strm_split.h; sourceTree = "<group>"; };
+		69B149B427181FDA00CFFE1B /* mz_strm_buf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mz_strm_buf.h; sourceTree = "<group>"; };
+		69B149B527181FDA00CFFE1B /* mz_crypt_apple.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_crypt_apple.c; sourceTree = "<group>"; };
+		69B149B627181FDA00CFFE1B /* mz_strm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mz_strm.h; sourceTree = "<group>"; };
+		69B149B727181FDA00CFFE1B /* mz_strm_mem.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_strm_mem.c; sourceTree = "<group>"; };
+		69B149B827181FDA00CFFE1B /* mz_crypt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_crypt.c; sourceTree = "<group>"; };
+		69B149B927181FDA00CFFE1B /* mz_strm_wzaes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_strm_wzaes.c; sourceTree = "<group>"; };
+		69B149BA27181FDA00CFFE1B /* mz_strm_zlib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mz_strm_zlib.h; sourceTree = "<group>"; };
+		69B149BB27181FDA00CFFE1B /* mz_compat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_compat.c; sourceTree = "<group>"; };
+		69B149BC27181FDA00CFFE1B /* mz_strm_pkcrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mz_strm_pkcrypt.h; sourceTree = "<group>"; };
+		69B149BD27181FDA00CFFE1B /* mz_zip_rw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mz_zip_rw.h; sourceTree = "<group>"; };
+		69B149BE27181FDA00CFFE1B /* mz_os.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_os.c; sourceTree = "<group>"; };
+		69B149BF27181FDA00CFFE1B /* mz_zip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mz_zip.h; sourceTree = "<group>"; };
+		69B149C027181FDA00CFFE1B /* mz_os_posix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_os_posix.c; sourceTree = "<group>"; };
+		69B149C127181FDA00CFFE1B /* mz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mz.h; sourceTree = "<group>"; };
+		69B149C227181FDA00CFFE1B /* mz_strm_buf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_strm_buf.c; sourceTree = "<group>"; };
+		69B149C327181FDA00CFFE1B /* mz_strm_split.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_strm_split.c; sourceTree = "<group>"; };
+		69B149C427181FDA00CFFE1B /* mz_crypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mz_crypt.h; sourceTree = "<group>"; };
+		69B149C527181FDA00CFFE1B /* mz_strm_mem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mz_strm_mem.h; sourceTree = "<group>"; };
+		69B149C627181FDA00CFFE1B /* mz_strm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_strm.c; sourceTree = "<group>"; };
+		69B149C727181FDA00CFFE1B /* mz_strm_os.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mz_strm_os.h; sourceTree = "<group>"; };
+		69B149C827181FFD00CFFE1B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		69B149CA2718200200CFFE1B /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
+		69B14A012718231200CFFE1B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		69B14A032718231E00CFFE1B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +92,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FFC401F26203B5D00813B95 /* CoreGraphics.framework in Frameworks */,
-				0FFC401C26203B5800813B95 /* libz.tbd in Frameworks */,
+				69B14A042718231E00CFFE1B /* CoreGraphics.framework in Frameworks */,
+				69B14A022718231200CFFE1B /* libz.tbd in Frameworks */,
+				69B149CB2718200200CFFE1B /* libiconv.tbd in Frameworks */,
+				69B149C927181FFD00CFFE1B /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,36 +148,67 @@
 			children = (
 				0FFC401026203AC800813B95 /* LogManager.h */,
 				0FFC400326203AC800813B95 /* LogManager.m */,
-				0FFC400426203AC800813B95 /* minizip */,
+				69B149A427181FB300CFFE1B /* SSZipArchive */,
 			);
 			path = Log;
-			sourceTree = "<group>";
-		};
-		0FFC400426203AC800813B95 /* minizip */ = {
-			isa = PBXGroup;
-			children = (
-				0FFC400526203AC800813B95 /* unzip.c */,
-				0FFC400626203AC800813B95 /* zip.c */,
-				0FFC400726203AC800813B95 /* ZipArchive.h */,
-				0FFC400826203AC800813B95 /* ioapi.c */,
-				0FFC400926203AC800813B95 /* mztools.c */,
-				0FFC400A26203AC800813B95 /* crypt.h */,
-				0FFC400B26203AC800813B95 /* zip.h */,
-				0FFC400C26203AC800813B95 /* unzip.h */,
-				0FFC400D26203AC800813B95 /* ZipArchive.mm */,
-				0FFC400E26203AC800813B95 /* mztools.h */,
-				0FFC400F26203AC800813B95 /* ioapi.h */,
-			);
-			path = minizip;
 			sourceTree = "<group>";
 		};
 		0FFC401A26203B5800813B95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0FFC401E26203B5D00813B95 /* CoreGraphics.framework */,
-				0FFC401B26203B5800813B95 /* libz.tbd */,
+				69B14A032718231E00CFFE1B /* CoreGraphics.framework */,
+				69B14A012718231200CFFE1B /* libz.tbd */,
+				69B149CA2718200200CFFE1B /* libiconv.tbd */,
+				69B149C827181FFD00CFFE1B /* Security.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69B149A427181FB300CFFE1B /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				69B149A927181FDA00CFFE1B /* minizip */,
+				69B149A627181FD300CFFE1B /* SSZipArchive.h */,
+				69B149A727181FD300CFFE1B /* SSZipArchive.m */,
+				69B149A527181FD300CFFE1B /* SSZipCommon.h */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		69B149A927181FDA00CFFE1B /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				69B149AA27181FDA00CFFE1B /* mz_strm_os_posix.c */,
+				69B149AB27181FDA00CFFE1B /* mz_strm_pkcrypt.c */,
+				69B149AC27181FDA00CFFE1B /* mz_strm_wzaes.h */,
+				69B149AD27181FDA00CFFE1B /* mz_compat.h */,
+				69B149AE27181FDA00CFFE1B /* mz_strm_zlib.c */,
+				69B149AF27181FDA00CFFE1B /* mz_zip.c */,
+				69B149B027181FDA00CFFE1B /* mz_os.h */,
+				69B149B227181FDA00CFFE1B /* mz_zip_rw.c */,
+				69B149B327181FDA00CFFE1B /* mz_strm_split.h */,
+				69B149B427181FDA00CFFE1B /* mz_strm_buf.h */,
+				69B149B527181FDA00CFFE1B /* mz_crypt_apple.c */,
+				69B149B627181FDA00CFFE1B /* mz_strm.h */,
+				69B149B727181FDA00CFFE1B /* mz_strm_mem.c */,
+				69B149B827181FDA00CFFE1B /* mz_crypt.c */,
+				69B149B927181FDA00CFFE1B /* mz_strm_wzaes.c */,
+				69B149BA27181FDA00CFFE1B /* mz_strm_zlib.h */,
+				69B149BB27181FDA00CFFE1B /* mz_compat.c */,
+				69B149BC27181FDA00CFFE1B /* mz_strm_pkcrypt.h */,
+				69B149BD27181FDA00CFFE1B /* mz_zip_rw.h */,
+				69B149BE27181FDA00CFFE1B /* mz_os.c */,
+				69B149BF27181FDA00CFFE1B /* mz_zip.h */,
+				69B149C027181FDA00CFFE1B /* mz_os_posix.c */,
+				69B149C127181FDA00CFFE1B /* mz.h */,
+				69B149C227181FDA00CFFE1B /* mz_strm_buf.c */,
+				69B149C327181FDA00CFFE1B /* mz_strm_split.c */,
+				69B149C427181FDA00CFFE1B /* mz_crypt.h */,
+				69B149C527181FDA00CFFE1B /* mz_strm_mem.h */,
+				69B149C627181FDA00CFFE1B /* mz_strm.c */,
+				69B149C727181FDA00CFFE1B /* mz_strm_os.h */,
+			);
+			path = minizip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,14 +269,10 @@
 			files = (
 				0F4A73D2264A7F9C0064F026 /* HideStatusBarViewController.m in Sources */,
 				0FFC401326203AC800813B95 /* LogManager.m in Sources */,
-				0FFC401426203AC800813B95 /* unzip.c in Sources */,
-				0FFC401726203AC800813B95 /* mztools.c in Sources */,
+				69B149A827181FD300CFFE1B /* SSZipArchive.m in Sources */,
 				0FFC3FF1262039D900813B95 /* BJBStaticLog.m in Sources */,
-				0FFC401526203AC800813B95 /* zip.c in Sources */,
 				0FFC401126203AC800813B95 /* RealTimeLogManager.m in Sources */,
 				0FFC401226203AC800813B95 /* RealTimeLogWindow.m in Sources */,
-				0FFC401826203AC800813B95 /* ZipArchive.mm in Sources */,
-				0FFC401626203AC800813B95 /* ioapi.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

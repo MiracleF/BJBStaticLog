@@ -7,9 +7,10 @@
 //
 
 #import "LogManager.h"
-#import "ZipArchive.h"
+//#import "ZipArchive.h"
 //#import "RealTimeLogManager.h"
 //#import "XGNetworking.h"
+#import "SSZipArchive/SSZipArchive.h"
 
 // 日志保留最大天数
 static const int LogMaxSaveDay = 7;
@@ -291,17 +292,18 @@ void uncaughtExceptionHandler(NSException *exception)
     // 压缩包文件路径
     NSString * zipFile = [self.basePath stringByAppendingString:ZipFileName];
     
-    ZipArchive* zip = [[ZipArchive alloc] init];
-    // 创建一个zip包
-    BOOL created = [zip CreateZipFile2:zipFile];
-    if (!created) {
-        // 关闭文件
-        [zip CloseZipFile2];
-        return NO;
-    }
+//    ZipArchive* zip = [[ZipArchive alloc] init];
+//    // 创建一个zip包
+//    BOOL created = [zip CreateZipFile2:zipFile];
+//    if (!created) {
+//        // 关闭文件
+//        [zip CloseZipFile2];
+//        return NO;
+//    }
     
     if (dates) {
         // 拉取指定日期的
+        NSMutableArray *mFiles = [@[] mutableCopy];
         for (NSString* fileName in files) {
             if ([dates containsObject:fileName]) {
                 // 将要被压缩的文件
@@ -309,25 +311,35 @@ void uncaughtExceptionHandler(NSException *exception)
                 // 判断文件是否存在
                 if ([[NSFileManager defaultManager] fileExistsAtPath:file]) {
                     // 将日志添加到zip包中
-                    [zip addFileToZip:file newname:fileName];
+//                    [zip addFileToZip:file newname:fileName];
+                    [mFiles addObject:file];
+                    
+                 
                 }
             }
         }
+        
+        [SSZipArchive createZipFileAtPath:zipFile withFilesAtPaths:mFiles];
+        
     }else{
         // 全部
-        for (NSString* fileName in files) {
-            // 将要被压缩的文件
-            NSString *file = [self.basePath stringByAppendingString:fileName];
-            // 判断文件是否存在
-            if ([[NSFileManager defaultManager] fileExistsAtPath:file]) {
-                // 将日志添加到zip包中
-                [zip addFileToZip:file newname:fileName];
-            }
-        }
+        
+        [SSZipArchive createZipFileAtPath:zipFile withFilesAtPaths:files];
+        
+//        for (NSString* fileName in files) {
+//            // 将要被压缩的文件
+//            NSString *file = [self.basePath stringByAppendingString:fileName];
+//            // 判断文件是否存在
+//            if ([[NSFileManager defaultManager] fileExistsAtPath:file]) {
+//                // 将日志添加到zip包中
+////                [zip addFileToZip:file newname:fileName];
+//
+//            }
+//        }
     }
     
     // 关闭文件
-    [zip CloseZipFile2];
+//    [zip CloseZipFile2];
     
     for (NSString* fileName in files) {
         
